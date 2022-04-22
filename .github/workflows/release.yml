@@ -117,7 +117,7 @@ jobs:
           echo "$(echo "`cat ./api/AltV.Net.CApi/AltV.Net.CApi.csproj`" | perl -pe 's/<PackageReleaseNotes>(.*)<\/PackageReleaseNotes>/<PackageReleaseNotes>Changelog can be found here https:\/\/github.com\/FabianTerhorst\/coreclr-module\/releases\/tag\/'${GITHUB_REF##*/}'<\/PackageReleaseNotes>/g')" > ./api/AltV.Net.CApi/AltV.Net.CApi.csproj
           echo "$(echo "`cat ./api/AltV.Net.Shared/AltV.Net.Shared.csproj`" | perl -pe 's/<PackageVersion>(.*)<\/PackageVersion>/<PackageVersion>'${GITHUB_REF##*/}'<\/PackageVersion>/g')" > ./api/AltV.Net.Shared/AltV.Net.Shared.csproj
           echo "$(echo "`cat ./api/AltV.Net.Shared/AltV.Net.Shared.csproj`" | perl -pe 's/<PackageReleaseNotes>(.*)<\/PackageReleaseNotes>/<PackageReleaseNotes>Changelog can be found here https:\/\/github.com\/FabianTerhorst\/coreclr-module\/releases\/tag\/'${GITHUB_REF##*/}'<\/PackageReleaseNotes>/g')" > ./api/AltV.Net.Shared/AltV.Net.Shared.csproj
-      - uses: alirezanet/publish-nuget@v3.0.3
+      - uses: alirezanet/publish-nuget@v3.0.4
         with:
           PROJECT_FILE_PATH: ./api/AltV.Net/AltV.Net.csproj
           VERSION_REGEX: <PackageVersion>(.*)<\/PackageVersion>
@@ -125,7 +125,7 @@ jobs:
           INCLUDE_SYMBOLS: true
           TAG_COMMIT: false
           NO_BUILD: true
-      - uses: alirezanet/publish-nuget@v3.0.3
+      - uses: alirezanet/publish-nuget@v3.0.4
         with:
           PROJECT_FILE_PATH: ./api/AltV.Net.Async/AltV.Net.Async.csproj
           VERSION_REGEX: <PackageVersion>(.*)<\/PackageVersion>
@@ -133,7 +133,7 @@ jobs:
           INCLUDE_SYMBOLS: true
           TAG_COMMIT: false
           NO_BUILD: true
-      - uses: alirezanet/publish-nuget@v3.0.3
+      - uses: alirezanet/publish-nuget@v3.0.4
         with:
           PROJECT_FILE_PATH: ./api/AltV.Net.Interactions/AltV.Net.Interactions.csproj
           VERSION_REGEX: <PackageVersion>(.*)<\/PackageVersion>
@@ -141,7 +141,7 @@ jobs:
           INCLUDE_SYMBOLS: true
           TAG_COMMIT: false
           NO_BUILD: true
-      - uses: alirezanet/publish-nuget@v3.0.3
+      - uses: alirezanet/publish-nuget@v3.0.4
         with:
           PROJECT_FILE_PATH: ./api/AltV.Net.Async.CodeGen/AltV.Net.Async.CodeGen.csproj
           VERSION_REGEX: <PackageVersion>(.*)<\/PackageVersion>
@@ -149,7 +149,7 @@ jobs:
           INCLUDE_SYMBOLS: true
           TAG_COMMIT: false
           NO_BUILD: true
-      - uses: alirezanet/publish-nuget@v3.0.3
+      - uses: alirezanet/publish-nuget@v3.0.4
         with:
           PROJECT_FILE_PATH: ./api/AltV.Net.Resources.Chat.Api/AltV.Net.Resources.Chat.Api.csproj
           VERSION_REGEX: <PackageVersion>(.*)<\/PackageVersion>
@@ -157,7 +157,7 @@ jobs:
           INCLUDE_SYMBOLS: true
           TAG_COMMIT: false
           NO_BUILD: true
-      - uses: alirezanet/publish-nuget@v3.0.3
+      - uses: alirezanet/publish-nuget@v3.0.4
         with:
           PROJECT_FILE_PATH: ./api/AltV.Net.EntitySync.ServerEvent/AltV.Net.EntitySync.ServerEvent.csproj
           VERSION_REGEX: <PackageVersion>(.*)<\/PackageVersion>
@@ -165,7 +165,7 @@ jobs:
           INCLUDE_SYMBOLS: true
           TAG_COMMIT: false
           NO_BUILD: true
-      - uses: alirezanet/publish-nuget@v3.0.3
+      - uses: alirezanet/publish-nuget@v3.0.4
         with:
           PROJECT_FILE_PATH: ./api/AltV.Net.Client/AltV.Net.Client.csproj
           VERSION_REGEX: <PackageVersion>(.*)<\/PackageVersion>
@@ -173,7 +173,7 @@ jobs:
           INCLUDE_SYMBOLS: true
           TAG_COMMIT: false
           NO_BUILD: true
-      - uses: alirezanet/publish-nuget@v3.0.3
+      - uses: alirezanet/publish-nuget@v3.0.4
         with:
           PROJECT_FILE_PATH: ./api/AltV.Net.ColShape/AltV.Net.ColShape.csproj
           VERSION_REGEX: <PackageVersion>(.*)<\/PackageVersion>
@@ -181,7 +181,7 @@ jobs:
           INCLUDE_SYMBOLS: true
           TAG_COMMIT: false
           NO_BUILD: true
-      - uses: alirezanet/publish-nuget@v3.0.3
+      - uses: alirezanet/publish-nuget@v3.0.4
         with:
           PROJECT_FILE_PATH: ./api/AltV.Net.Shared/AltV.Net.Shared.csproj
           VERSION_REGEX: <PackageVersion>(.*)<\/PackageVersion>
@@ -189,7 +189,7 @@ jobs:
           INCLUDE_SYMBOLS: true
           TAG_COMMIT: false
           NO_BUILD: true
-      - uses: alirezanet/publish-nuget@v3.0.3
+      - uses: alirezanet/publish-nuget@v3.0.4
         with:
           PROJECT_FILE_PATH: ./api/AltV.Net.CApi/AltV.Net.CApi.csproj
           VERSION_REGEX: <PackageVersion>(.*)<\/PackageVersion>
